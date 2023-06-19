@@ -14,7 +14,7 @@ const editSubmit = document.querySelector(".edit-submit");
 const editModal = document.querySelector("#edit-modal");
 const closeModal = document.querySelector("#close-modal");
 
-let API = "http://localhost:8000/contacts";
+let API = "http://localhost:3000/contacts";
 
 async function getContact() {
   const res = await fetch(API);
@@ -106,12 +106,12 @@ addForm.addEventListener("submit", async (e) => {
   good();
 });
 
-// resetBtn.addEventListener("click", (e) => {
-//   localStorage.removeItem("data");
+resetBtn.addEventListener("click", (e) => {
+  localStorage.removeItem("data");
 
-//   data = [];
-//   good();
-// });
+  data = [];
+  good();
+});
 
 document.addEventListener("click", async (e) => {
   if (e.target.classList.contains("delete-btn")) {
@@ -161,7 +161,6 @@ editSubmit.addEventListener("click", async (e) => {
   };
   await editTodo(newContact, id);
   good();
-  closeModal();
 
   editCancel.click();
 });

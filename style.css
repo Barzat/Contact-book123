@@ -1,11 +1,10 @@
 * {
   margin: 0;
-  background-color: rgb(0, 0, 0);
 }
 h1 {
   margin-top: 50px;
   text-align: center;
-  color: #fff;
+  color: black;
 }
 
 form {
@@ -21,14 +20,14 @@ input {
   width: 183px;
   height: 30px;
   border-radius: 10px;
-  color: #fff;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
   /* border: none; */
   /* opacity: 2; */
 }
 
 .todo-item {
-  /* background-color: #fff; */
-  color: #fff;
+  color: black;
   width: 888px;
   height: 100px;
   margin: 50px auto;
@@ -36,12 +35,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* text-align: ; */
+  border-radius: 10px;
 }
-
-/* .todo-item span {
-    background-color: #fff;
-  } */
 
 .btn-good {
   width: 200px;
@@ -85,9 +80,10 @@ input {
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: rgb(132, 193, 219);
+  border-radius: 25px;
   padding: 20px;
-  border-radius: 5px;
+
   width: 400px;
   height: 300px;
   display: flex;
@@ -122,23 +118,25 @@ input {
   cursor: pointer;
   outline: none;
   margin-left: 10px;
+  color: orangered;
 }
 .modal-header h3 {
-  background-color: #fff;
+  background-color: greenyellow;
 }
 
 .modal-header {
-  background-color: #fff;
+  background-color: greenyellow;
 }
 
 .modal-footer {
-  background-color: #fff;
+  background-color: greenyellow;
 }
 
 #edit-cancel,
 .edit-submit {
-  color: #fff;
-  background-color: red;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(136, 69, 217);
   border: none;
   border-radius: 10px;
   cursor: pointer;
